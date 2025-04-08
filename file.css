@@ -1,0 +1,78 @@
+body {
+    font-family: 'Bad Script', cursive;
+    color: rgba(165,224,230,255);
+}
+
+.navbar-nav .nav-link,
+.navbar-nav .nav-item , .navbar-brand {
+    color: rgb(214, 85, 43) !important;
+}
+
+
+body {
+    background-color: rgb(214, 85, 43);
+}
+
+.navbar {
+    background-color: rgba(165,224,230,255) !important;
+}
+
+footer {
+    background-color: rgb(214, 85, 43) !important;
+}
+
+.form-container {
+    max-width: 600px;
+    background-color: rgba(165,224,230,255);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    color: rgb(214, 85, 43);
+}
+
+.btn-custom {
+    background-color: rgb(214, 85, 43);
+    color: rgba(165,224,230,255);
+    font-size: 18px;
+}
+.btn-custom:hover {
+    background-color: #218838;
+}
+
+.container-custom {
+    max-width: 700px;
+    background-color: rgba(165,224,230,255);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.iban-box {
+    background-color: rgba(165,224,230,255);
+    padding: 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 18px;
+    color: rgb(214, 85, 43);
+}
+
+.listaNozze {
+    background-color: transparent;
+    padding: 20px;
+}
+
+.sogno {
+    margin-bottom: 50px !important;
+}
+
+.trova {
+    font-size: 40px;
+}
+
+.zonaMaps {
+    color: rgb(214, 85, 43);
+}
+
+img {
+    padding-bottom: 10px;
+}

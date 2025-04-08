@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Conferma Presenza - Matrimonio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="file.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bad+Script&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg bg-light shadow-sm">
+            <div class="container">
+                <a class="navbar-brand mx-auto" href="index.html">R&F</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link active" href="file.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="presenze.html">Ci sarai?</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contattaci.html">Contattaci</a></li>
+                        <li class="nav-item"><a class="nav-link" href="zona.html">Non perderti</a></li>
+                        <li class="nav-item"><a class="nav-link" href="lista.html">Lista nozze</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container d-flex justify-content-center align-items-center vh-100">
+        <div class="form-container">
+            <h2 class="text-center mb-4">Conferma la tua presenza!</h2>
+            <form method="post" action="https://script.google.com/macros/s/AKfycbwixYVYsv_v-3SvCnCoAsBSKFnyUu415QUTiX4LQJ4KcB523dbgkg8BC62rA7L4l1o_/exec">
+                <div class="mb-3">
+                    <label for="nome" class="form-label">Nome</label>
+                    <input type="text" class="form-control" id="nome" name="nome" required>
+                </div>
+                <div class="mb-3">
+                    <label for="cognome" class="form-label">Cognome</label>
+                    <input type="text" class="form-control" id="cognome" name="cognome" required>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Confermi la tua presenza?</label>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="presenza" id="presenza-true" value="true" required>
+                        <label class="form-check-label" for="presenza-true">Sì</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="presenza" id="presenza-false" value="false" required>
+                        <label class="form-check-label" for="presenza-false">No</label>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="quanti" class="form-label">Quanti ne siete?</label>
+                    <input type="number" class="form-control" id="quanti" name="qnt" min="1" required>
+                </div>
+                <div class="mb-3">
+                    <label for="allergie" class="form-label">Allergie (opzionale)</label>
+                    <textarea class="form-control" id="allergie" name="allergie" rows="3"></textarea>
+                </div>
+                <button type="submit" class="btn btn-custom w-100">Invia</button>
+            </form>
+        </div>
+    </main>
+
+    <footer class="text-center py-3 mt-4">
+        © 2025 Matrimonio di Renata e Francesco.
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.querySelector("form").addEventListener("submit", function(event) {
+            event.preventDefault(); // Evita il refresh della pagina
+    
+            var formData = new FormData(this);
+            
+            fetch(this.action, {
+                method: "POST",
+                body: formData
+            })
+            .then(() => {
+                alert("Grazie per averci detto se ci sarai! 😊"); // Mostra il messaggio di conferma
+                window.location.href = "file.html"; // Reindirizza alla home
+            })
+            .catch(error => console.error("Errore:", error));
+        });
+    </script>
+</body>
+</html>
