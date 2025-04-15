@@ -184,3 +184,41 @@ img {
     object-fit: cover; /* Adatta l'immagine senza distorsioni */
 }
 
+.polaroid1 {
+    width: 200px;
+    height: 325px; /* Regola l'altezza per coprire lo spazio */
+    padding: 10px;
+    background: white;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    display: flex;
+    align-items: center; /* Centra l'immagine verticalmente */
+    justify-content: center;
+}
+
+.polaroid1 img {
+    width: 100%; /* Occupa tutto lo spazio disponibile */
+    height: auto; /* Mantiene le proporzioni */
+    display: block;
+    object-fit: cover;
+}
+
+.polaroid1 p {
+    position: absolute;
+    bottom: auto;
+    margin-top: 10px; /* Spazio tra foto e testo */
+    font-size: 1.2rem; /* Grandezza del testo */
+    color: rgb(214, 85, 43);
+    background: white; /* Sfondo bianco */
+    padding: 5px;
+    border-radius: 5px; /* Angoli leggermente arrotondati */
+    display: block;
+}
+
+
+
+@media (max-width: 1750px) {
+    .polaroid1 p {
+        bottom: 630px;
+    }
+}
