@@ -8,6 +8,9 @@ body {
     color: rgb(214, 85, 43) !important;
 }
 
+.navbar-brand {
+    padding-left: 55px;
+}
 
 body {
     background-color: rgb(214, 85, 43);
@@ -91,3 +94,60 @@ img {
     width: 70px;
     height: 70px;
 }
+
+#imgMare {
+    width: 100vw; /* Occupa tutta la larghezza della finestra */
+    height: auto; /* Mantiene le proporzioni */
+    object-fit: cover; /* Adatta l'immagine senza deformazioni */
+    display: block; /* Evita spazi indesiderati sotto l'immagine */
+    margin: 0; /* Elimina eventuali margini */
+    padding: 0; /* Rimuove padding */
+}
+
+
+.testoNozze {
+    position: absolute;
+    top: 45%; /* Regola la posizione verticale */
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 3rem; /* Dimensione grande del testo */
+    color: rgb(214, 85, 43);
+    text-align: center;
+    width: 80%; /* Controlla la larghezza del testo */
+    z-index: 10; /* Assicura che il testo sia sopra l'immagine */
+}
+
+
+.testoNozze2 {
+    padding-top: 10px;
+}
+
+
+.polaroid {
+    width: 200px;
+    height: 325px; /* Regola l'altezza per coprire lo spazio */
+    padding: 10px;
+    background: white;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    display: flex;
+    align-items: center; /* Centra l'immagine verticalmente */
+    justify-content: center;
+}
+
+.polaroid img {
+    width: 100%; /* Occupa tutto lo spazio disponibile */
+    height: auto; /* Mantiene le proporzioni */
+    display: block;
+    object-fit: cover;
+}
+
+
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap; /* Permette la responsività */
+    justify-content: center; /* Centra le immagini */
+    gap: 15px; /* Spazio tra le foto */
+}
+
