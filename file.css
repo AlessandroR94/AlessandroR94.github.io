@@ -203,22 +203,5 @@ img {
     object-fit: cover;
 }
 
-.polaroid1 p {
-    position: absolute;
-    bottom: auto;
-    margin-top: 10px; /* Spazio tra foto e testo */
-    font-size: 1.2rem; /* Grandezza del testo */
-    color: rgb(214, 85, 43);
-    background: white; /* Sfondo bianco */
-    padding: 5px;
-    border-radius: 5px; /* Angoli leggermente arrotondati */
-    display: block;
-}
 
 
-
-@media (max-width: 1750px) {
-    .polaroid1 p {
-        bottom: 630px;
-    }
-}
