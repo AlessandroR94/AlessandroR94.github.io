@@ -142,12 +142,45 @@ img {
     object-fit: cover;
 }
 
-
+#scherzo {
+    padding-top: 20px;
+}
 
 .gallery {
     display: flex;
     flex-wrap: wrap; /* Permette la responsività */
     justify-content: center; /* Centra le immagini */
     gap: 15px; /* Spazio tra le foto */
+}
+
+.image-container {
+    position: relative; /* Permette di posizionare elementi sopra l'immagine */
+    display: inline-block;
+    width: 100%; /* Occupa tutta la larghezza disponibile */
+}
+
+.overlay-text {
+    position: absolute;
+    top: 50px;
+    font-size: 2rem;
+    color: rgb(214, 85, 43);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+
+/* Responsività: sposta il testo in alto a destra su mobile */
+@media (max-width: 768px) {
+    .overlay-text {
+        left: 5px;
+    }
+}
+
+.image-container img {
+    width: 100%; /* Occupa tutta la larghezza disponibile */
+    max-width: 100vw; /* Impedisce che superi la larghezza della finestra */
+    height: auto; /* Mantiene proporzioni corrette */
+    display: block; /* Rimuove eventuali spazi indesiderati */
+    object-fit: cover; /* Adatta l'immagine senza distorsioni */
 }
 
