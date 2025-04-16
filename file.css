@@ -203,5 +203,19 @@ img {
     object-fit: cover;
 }
 
+.polaroid1-text {
+    position: absolute;
+    font-size: 16px;
+    margin-top: 10px;
+    color: #333;
+    text-align: center;
+    top: 505px;
+    color: rgb(214, 85, 43);
+}
 
 
+@media (max-width: 1800px) {
+    .polaroid1-text {
+        top: 505px;
+    }
+}
