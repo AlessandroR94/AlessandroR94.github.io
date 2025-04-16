@@ -199,7 +199,6 @@ img {
 .polaroid1 img {
     width: 100%; /* Occupa tutto lo spazio disponibile */
     height: auto; /* Mantiene le proporzioni */
-    display: block;
     object-fit: cover;
 }
 
