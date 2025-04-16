@@ -192,6 +192,7 @@ img {
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
     text-align: center;
     display: flex;
+    flex-direction: column;
     align-items: center; /* Centra l'immagine verticalmente */
     justify-content: center;
 }
@@ -199,23 +200,16 @@ img {
 .polaroid1 img {
     width: 100%; /* Occupa tutto lo spazio disponibile */
     height: auto; /* Mantiene le proporzioni */
-    display: block;
     object-fit: cover;
 }
 
 .polaroid1-text {
-    position: absolute;
     font-size: 16px;
     margin-top: 10px;
     color: #333;
     text-align: center;
-    top: 505px;
     color: rgb(214, 85, 43);
+    margin: 0;
 }
 
 
-@media (max-width: 1800px) {
-    .polaroid1-text {
-        top: 505px;
-    }
-}
