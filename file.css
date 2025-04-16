@@ -184,23 +184,5 @@ img {
     object-fit: cover; /* Adatta l'immagine senza distorsioni */
 }
 
-.polaroid1 {
-    width: 200px;
-    height: 325px; /* Regola l'altezza per coprire lo spazio */
-    padding: 10px;
-    background: white;
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
-    text-align: center;
-    display: flex;
-    align-items: center; /* Centra l'immagine verticalmente */
-    justify-content: center;
-}
-
-.polaroid1 img {
-    width: 100%; /* Occupa tutto lo spazio disponibile */
-    height: auto; /* Mantiene le proporzioni */
-    object-fit: cover;
-}
-
 
 
